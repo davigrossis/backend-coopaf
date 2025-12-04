@@ -1,0 +1,10 @@
+services:
+  api-coopaf-pg:
+    image: bitnami/postgresql
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=apicoopaf
+    ports:
+      - "5432:5432"
+  
